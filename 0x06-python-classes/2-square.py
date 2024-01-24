@@ -7,13 +7,13 @@ class Square:
 
     def __init__(self, size=0):
         '''
-            The init method initializes the class instance
+            Init method; to initialize instance of class
 
         @self:
-            A parameter used to refer to the class instance
+            Instance of class
 
         @size:
-            The size of the square, must be a +ve integer
+            Size of the square, unsigned data type in c
         '''
         if type(size) is int:
             if size < 0:
