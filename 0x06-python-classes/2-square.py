@@ -1,24 +1,20 @@
 #!/usr/bin/python3
-''' A Module that creates a Square object '''
+"""Square class type created"""
 
 
 class Square:
-    """ Object template creation"""
+    """Square defined here"""
 
     def __init__(self, size=0):
-        '''
-            Init method; to initialize instance of class
+        """
+        Initialization of square
 
-        @self:
-            Instance of class
-
-        @size:
-            Size of the square, unsigned data type in c
-        '''
-        if type(size) is int:
-            if size < 0:
-                raise ValueError('Size must be >= 0')
-            else:
-                self.__size = size
+            Args:
+                size: square size
+        """
+        if not isinstance(size, int):
+            raise TypeError("size must be an integer")
+        elif size < 0:
+            raise ValueError("size must be >= 0")
         else:
-            raise TypeError('Size must be an integer')
+            self.__size = size
