@@ -1,16 +1,14 @@
 #!/usr/bin/python3
-"""Solves the N-queens puzzle.
-Determines all possible solutions to placing N
-N non-attacking queens on an NxN chessboard.
+"""N-queens puzzle solns
+Determine potential solns to N
+N non-attacking queens on NxN chessboard.
 Example:
     $ ./101-nqueens.py N
-N must be an integer greater than or equal to 4.
+N; integer>/== 4.
 Attributes:
-    board (list): A list of lists representing the chessboard.
-    solutions (list): A list of lists containing solutions.
-Solutions are represented in the format [[r, c], [r, c], [r, c], [r, c]]
-where `r` and `c` represent the row and column, respectively, where a
-queen must be placed on the chessboard.
+    board (list): list of lists chessboard reps.
+    solutions (list): list of lists wielding solutions.
+format solutions represented[[r, c], [r, c], [r, c], [r, c]].
 """
 import sys
 
