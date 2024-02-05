@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""Definition of fnctn that takes objects and allows addtion of attributes to them"""
+"""Definition of fnctn to takes objects&allow addtion of attributes to them"""
 
 
 def add_attribute(obj, att, value):
