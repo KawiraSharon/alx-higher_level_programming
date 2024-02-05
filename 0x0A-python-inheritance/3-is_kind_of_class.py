@@ -1,4 +1,4 @@
-#!/usr/binpython3
+#!/usr/bin/python3
 """Func return True if objis instance or False if otherwise"""
 
 
