@@ -17,6 +17,6 @@ class Rectangle(BaseGeometry):
         """Area attribute defined"""
         return self.__width* self.__height
 
-    def str(self):
+    def __str__(self):
         """Function performs operator overloading"""
         return "[Rectangle] " + str(self.__width) + '/' + str(self.__height)
