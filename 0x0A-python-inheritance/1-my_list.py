@@ -1,11 +1,11 @@
 #!/usr/bin/python3
 
-"""Define inherited class"""
+"""Definition of class MyList"""
 
 
-class Mylist(list):
-    """Sorts builtin list"""
+class MyList(list):
+    """Class's mthds definition"""
 
     def print_sorted(self):
-        """List output in order that ascends"""
+        """List printed in ascending order"""
         print(sorted(self))
