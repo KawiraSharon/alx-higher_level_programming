@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 """Class Basegeometry"""
 
+
 class BaseGeometry:
     """Class BaseGeometry taking method"""
     def area(self):
