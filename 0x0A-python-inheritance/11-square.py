@@ -6,7 +6,7 @@ Rectangle = __import__('9-rectangle').Rectangle
 class Square(Rectangle):
     """Mthds/Attrbts of new square"""
 
-    def __init___(self, size):
+    def __init__(self, size):
         """args size"""
         self.integer_validator("size", size)
         super().__init__(size, size)
