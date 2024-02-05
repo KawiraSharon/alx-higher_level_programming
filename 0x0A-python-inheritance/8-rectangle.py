@@ -2,6 +2,7 @@
 """Class Rectangle inheriting from 7-base-geometry"""
 BaseGeometry = __import__("7-base_geometry").BaseGeometry
 
+
 class Rectangle(BaseGeometry):
     """Reactangle class defined here"""
 
