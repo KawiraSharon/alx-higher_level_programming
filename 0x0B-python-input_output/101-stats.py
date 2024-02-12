@@ -1,17 +1,20 @@
 #!/usr/bin/python3
-"""Reads from stdin"""
+
+"""Stdin Reading"""
 
 
 def print_stats(size, status_codes):
-    """
-    Args: size, status_codes (dict): 
-    """
+
+    """Prints stats"""
+
     print("File size: {}".format(size))
+
     for key in sorted(status_codes):
         print("{}: {}".format(key, status_codes[key]))
 
 
 if __name__ == "__main__":
+
     import sys
 
     size = 0
