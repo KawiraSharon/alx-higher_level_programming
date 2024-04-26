@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
-this piece of code sends request to URL, then displays body of response.
+this piece of code sends request to URL, then displays body of the response.
 """
 import urllib.request
 from sys import argv
