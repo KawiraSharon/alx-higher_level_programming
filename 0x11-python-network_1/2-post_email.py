@@ -1,31 +1,19 @@
 #!/usr/bin/python3
+"""Code will send POST request to URL that's iven against respective mail.
+  Also displays body of response.
 """
-POST request to the passed URL with the email as a parameter
-"""
-import urllib.request
+
+
+import sys
 import urllib.parse
-from sys import argv
+import urllib.request
 
-
-def main(argv):
-    """
-    Sends a POST request to the passed URL with the email as a parameter,
-    and displays the body of the response (decoded in utf-8)
-    """
-    if len(argv) < 3:
-        print("Usage: ./script_name.py <URL> <email>")
-        return
-
-    url = argv[1]
-    email = argv[2]
-
-    values = {'email': email}
-    data = urllib.parse.urlencode(values)
-    data = data.encode('utf8')
-    req = urllib.request.Request(url, data)
-    with urllib.request.urlopen(req) as response:
-        result = response.read()
-        print(result.decode('utf8'))
 
 if __name__ == "__main__":
-    main(argv)
+    url = sys.argv[1]
+    value = {"email": sys.argv[2]}
+    data = urllib.parse.urlencode(value).encode("ascii")
+
+    request = urllib.request.Request(url, data)
+    with urllib.request.urlopen(request) as response:
+        print(response.read().decode("utf-8"))
