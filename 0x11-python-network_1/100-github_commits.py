@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
-Module to access to the GitHub API and uses the information
+Module to access GitHub API and use information given.
 """
 import requests
 from requests.auth import HTTPBasicAuth
@@ -9,9 +9,9 @@ from sys import argv
 
 def main(argv):
     """
-    Function that list 10 commits (from the most recent to oldest)
-    of the repository.The first argument will be the repository name
-    and the second argument will be the owner name
+    Function list 10 commits (from recent to oldest)
+    of repo.The 1st arg - repo name
+    2nd arg - owner name
     """
 
     def print_commits(i, commit_list):
