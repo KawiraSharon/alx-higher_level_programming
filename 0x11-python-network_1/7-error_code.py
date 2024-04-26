@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
-Sends a request to the URL and displays the body of the response.
+This code sends a request to URL then display body of response.
 """
 import requests
 from sys import argv
@@ -8,8 +8,8 @@ from sys import argv
 
 def main(argv):
     """
-    Method that manage urllib.error.HTTPError exceptions and
-    print: Error code: followed by the HTTP status code
+    This python method manages urllib.error.HTTPError exceptions
+    It also prints the Error code: follows it with the HTTP status code
     """
     url = argv[1]
     r = requests.get(url)
