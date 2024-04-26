@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""Script will utilize GitHub API then display GitHub ID 
+"""Script will utilize GitHub API then display GitHub ID
 with respect to provided credentials.
 """
 import sys

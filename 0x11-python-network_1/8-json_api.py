@@ -1,5 +1,6 @@
 #!/usr/bin/python3
-"""This file will sends POST request to http://0.0.0.0:5000/search_user using letter provided
+"""This file will sends POST request to http://0.0.0.0:5000/search_user 
+using letter provided
   with the letter representing value of variable `q`.
   in case no letter is given, program sends `q=""`.
 """
