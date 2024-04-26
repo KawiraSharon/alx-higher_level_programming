@@ -1,13 +1,13 @@
 #!/usr/bin/python3
 """
-The module uses request to fetch https://intranet.hbtn.io/status
+Module using request that fetches https://intranet.hbtn.io/status
 """
 import requests
 
 
 def main():
     """
-    Definition of function to fetch https://intranet.hbtn.io/status
+    Function that fetches https://intranet.hbtn.io/status
     """
     url = 'https://intranet.hbtn.io/status'
     r = requests.get(url)
